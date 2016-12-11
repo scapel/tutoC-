@@ -8,13 +8,16 @@
 #ifndef GUERRIER_H_
 #define GUERRIER_H_
 
+#include <string>
 #include "Personnage.h"
 
-class Guerrier: public Personnage {
+class Guerrier: public Personnage{
+
 public:
-	Guerrier();
+	Guerrier(std::string nom,int vie);
 	void frapperCommeUnSourd(void);
-	virtual ~Guerrier();
+	void sePresenter(void);
+//	virtual ~Guerrier();
 };
 
 #endif /* GUERRIER_H_ */

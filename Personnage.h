@@ -19,7 +19,8 @@ public:
 	Personnage(std::string nom,int vie);
 
 	void recevoirAttaque(int degat);
-	void coupDePoing(Personnage& adversaire);
+	void coupDePoing(Personnage& adversaire)const;
+	void sePresenter(void)const;
 	virtual ~Personnage();
 };
 
